@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textNumber1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/number1"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="34sp" />
+
+    <EditText
+        android:id="@+id/enteredNumber1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="no"
+        android:ems="10"
+        android:hint="@string/number1_hint"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_green_dark"
+        android:textColorHint="@color/teal_700"
+        android:textSize="48sp" />
+
+    <TextView
+        android:id="@+id/textNumber2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/number2"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="34sp" />
+
+    <EditText
+        android:id="@+id/enteredNumber2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="no"
+        android:ems="10"
+        android:hint="@string/number2_hint"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_green_dark"
+        android:textColorHint="@color/teal_700"
+        android:textSize="48sp" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:text="@string/add"
+        android:textSize="48sp" />
+
+</LinearLayout>
