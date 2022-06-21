@@ -5,5 +5,6 @@
     <string name="number2">数値2</string>
     <string name="number2_hint">数値2はココ</string>
     <string name="add">和を求める</string>
+    <string name="subtract">差を求める</string>
     <string name="blank" />
 </resources>
