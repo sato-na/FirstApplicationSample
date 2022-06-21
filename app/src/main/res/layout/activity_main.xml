@@ -57,4 +57,12 @@
         android:text="@string/add"
         android:textSize="48sp" />
 
+    <Button
+        android:id="@+id/subtractButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:text="@string/subtract"
+        android:textSize="48sp" />
+
 </LinearLayout>
