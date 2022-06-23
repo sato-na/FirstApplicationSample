@@ -73,4 +73,12 @@
         android:text="@string/multiply"
         android:textSize="48sp" />
 
+    <Button
+        android:id="@+id/divideButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:text="@string/divide"
+        android:textSize="48sp" />
+
 </LinearLayout>
