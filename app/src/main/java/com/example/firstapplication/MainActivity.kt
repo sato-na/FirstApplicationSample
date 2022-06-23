@@ -91,14 +91,14 @@ class MainActivity : AppCompatActivity() {
                 val number2 = strNumber2.toInt()
 
                 // 計算結果
-                val difference = number1 * number2
+                val product = number1 * number2
 
                 // 説明用テキストの作成
                 val expression = strNumber1 + "と" + strNumber2 + "の積は"
 
                 // 画面遷移する
                 val intent = Intent(this, ResultActivity::class.java)
-                intent.putExtra("result", difference)
+                intent.putExtra("result", product)
                 intent.putExtra("expression", expression)
                 startActivity(intent)
             }
