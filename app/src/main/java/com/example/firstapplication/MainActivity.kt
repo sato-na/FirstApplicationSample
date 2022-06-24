@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity() {
         val subtractButtonP = findViewById<Button>(R.id.subtractButton)
         val multiplyButtonP = findViewById<Button>(R.id.multiplyButton)
         val divideButtonP = findViewById<Button>(R.id.divideButton)
+        val powerButtonP = findViewById<Button>(R.id.powerButton)
         val enteredNumber1P = findViewById<EditText>(R.id.enteredNumber1)
         val enteredNumber2P = findViewById<EditText>(R.id.enteredNumber2)
 
@@ -132,6 +133,37 @@ class MainActivity : AppCompatActivity() {
                 val intent = Intent(this, ResultActivityDivision::class.java)
                 intent.putExtra("quotient", quotient)
                 intent.putExtra("remainder", remainder)
+                intent.putExtra("expression", expression)
+                startActivity(intent)
+            }
+        }
+
+        powerButtonP.setOnClickListener {
+            // 入力した数字の処理
+            val strNumber1 = enteredNumber1P.text.toString()
+            val strNumber2 = enteredNumber2P.text.toString()
+
+            // 入力された数字が空であるか判断する
+            if (strNumber1.isEmpty()) {         // 数値1が空の時
+                enteredNumber1P.setError("数値1を入力して下さい")
+            } else if (strNumber2.isEmpty()) {  // 数値1が空じゃなく数値2が空の時
+                enteredNumber2P.setError("数値2を入力してください")
+            } else {    // 数値1も数値2も入力されている時
+                val number1 = strNumber1.toInt()
+                val number2 = strNumber2.toInt()
+
+                // 計算結果
+                var power: Int = 1
+                for (i in 1..number2) {
+                    power *= number1
+                }
+
+                // 説明用テキストの作成
+                val expression = strNumber1 + "の" + strNumber2 + "乗は"
+
+                // 画面遷移する
+                val intent = Intent(this, ResultActivity::class.java)
+                intent.putExtra("result", power)
                 intent.putExtra("expression", expression)
                 startActivity(intent)
             }

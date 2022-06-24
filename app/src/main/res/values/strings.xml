@@ -8,5 +8,6 @@
     <string name="subtract">差を求める</string>
     <string name="multiply">積を求める</string>
     <string name="divide">商を求める</string>
+    <string name="power">累乗を求める</string>
     <string name="blank" />
 </resources>
